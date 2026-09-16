@@ -11892,5 +11892,80 @@ if(PR&&panel&&cont){
 }
 @media (prefers-reduced-motion:reduce){.mega-bottom--v18 .mega-cta-btn,.mega-bottom--v18 .mega-cta-btn .icon{transition:none!important;}}
 </style>
+<style>
+/* Les 4 espaces sur mobile : liste verticale, sans EVI ni séquence épinglée */
+@media (max-width:760px){
+  .home-page .home-immersive-scroll{height:auto!important;min-height:0!important;}
+  .home-page .home-immersive-sticky{position:relative!important;top:auto!important;height:auto!important;min-height:0!important;overflow:visible!important;transform:none!important;}
+  .home-page .home-immersive-sticky>.immersive-scroll-cue,
+  html .home-page .home-immersive-sticky>.immersive-scroll-cue{display:none!important;}
+  .home-page .fullscreen-ecosystem{
+    position:relative!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;
+    width:auto!important;height:auto!important;min-height:0!important;max-height:none!important;
+    transform:none!important;opacity:1!important;visibility:visible!important;
+    display:flex!important;flex-direction:column!important;gap:12px!important;
+    margin:0!important;padding:calc(50svh + 12px) 16px 36px!important;border-radius:0!important;
+    background:#032444!important;overflow:visible!important;
+  }
+  .home-page .fullscreen-ecosystem::before,.home-page .fullscreen-ecosystem::after{display:none!important;}
+  .home-page .fullscreen-ecosystem .evi-hub,
+  .home-page .fullscreen-ecosystem .network-links{display:none!important;}
+  .home-page .fullscreen-ecosystem .pole{
+    position:relative!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;
+    grid-area:auto!important;width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;
+    transform:none!important;opacity:1!important;filter:none!important;clip-path:none!important;
+    display:block!important;padding:22px 20px 20px!important;margin:0!important;
+    border-radius:20px!important;border:1px solid rgba(80,195,255,.24)!important;
+    background:linear-gradient(160deg,rgba(0,119,253,.28) 0%,rgba(3,36,68,.9) 70%)!important;
+    box-shadow:none!important;overflow:hidden!important;text-align:left!important;
+  }
+  .home-page .fullscreen-ecosystem .pole-spotlight,
+  .home-page .fullscreen-ecosystem .pole-frame,
+  .home-page .fullscreen-ecosystem .pole-visual{display:none!important;}
+  .home-page .fullscreen-ecosystem .pole-content{
+    position:static!important;inset:auto!important;transform:none!important;opacity:1!important;
+    width:auto!important;max-width:none!important;height:auto!important;margin:0!important;padding:0!important;
+    display:flex!important;flex-direction:column!important;align-items:flex-start!important;text-align:left!important;gap:0!important;
+  }
+  .home-page .fullscreen-ecosystem .pole-heading-line{
+    order:0;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;
+    gap:10px!important;width:100%!important;margin:0 0 12px!important;transform:none!important;
+  }
+  .home-page .fullscreen-ecosystem .pole-heading-line{flex-wrap:nowrap!important;align-items:center!important;}
+  .home-page .fullscreen-ecosystem .pole-kicker{flex:1 1 auto!important;min-width:0!important;}
+  .home-page .fullscreen-ecosystem .pole-description,.home-page .fullscreen-ecosystem .pole-description span{max-width:none!important;width:auto!important;text-wrap:wrap!important;}
+  .home-page .fullscreen-ecosystem .pole-symbol{order:-1!important;flex:0 0 auto!important;margin:0!important;position:static!important;transform:none!important;}
+  .home-page .fullscreen-ecosystem .pole-kicker{
+    position:static!important;transform:none!important;margin:0!important;max-width:none!important;
+    font-size:11px!important;line-height:1.35!important;letter-spacing:.04em!important;text-align:left!important;color:rgba(255,255,255,.72)!important;
+  }
+  .home-page .fullscreen-ecosystem .pole-title{margin:0!important;text-align:left!important;transform:none!important;width:100%!important;}
+  .home-page .fullscreen-ecosystem .pole-title button{
+    display:block!important;width:100%!important;padding:0!important;text-align:left!important;transform:none!important;
+    font-size:30px!important;line-height:1.15!important;
+  }
+  .home-page .fullscreen-ecosystem .pole-title .title-word{display:inline!important;white-space:normal!important;}
+  .home-page .fullscreen-ecosystem .title-letter{opacity:1!important;transform:none!important;filter:none!important;}
+  .home-page .fullscreen-ecosystem .pole-title .title-alt{
+    display:block!important;margin-top:2px!important;font-size:18px!important;text-align:left!important;white-space:normal!important;
+  }
+  .home-page .fullscreen-ecosystem .title-underline{margin:12px 0 0!important;position:static!important;transform:none!important;}
+  .home-page .fullscreen-ecosystem .pole-description{margin:12px 0 0!important;max-width:none!important;text-align:left!important;font-size:15px!important;line-height:1.5!important;}
+  .home-page .fullscreen-ecosystem .pole-description .desktop-copy{display:inline!important;}
+  .home-page .fullscreen-ecosystem .pole-description .mobile-copy{display:none!important;}
+  .home-page .fullscreen-ecosystem .pole-gain{
+    align-self:flex-start!important;margin:12px 0 0!important;padding:5px 11px!important;font-size:12px!important;line-height:1.35!important;
+  }
+  .home-page .fullscreen-ecosystem .pole-footer{
+    display:block!important;position:static!important;transform:none!important;opacity:1!important;visibility:visible!important;
+    width:100%!important;margin:18px 0 0!important;
+  }
+  .home-page .fullscreen-ecosystem .pole-actions{display:block!important;width:100%!important;}
+  .home-page .fullscreen-ecosystem .pole-actions .button{
+    display:flex!important;width:100%!important;justify-content:center!important;min-height:46px!important;
+    opacity:1!important;transform:none!important;visibility:visible!important;pointer-events:auto!important;
+  }
+}
+</style>
 </body>
 </html>
